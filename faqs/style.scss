@@ -1,0 +1,73 @@
+
+  ul{
+    
+    list-style-type: none;
+    }      
+
+
+     a{
+        text-decoration: none;
+        
+        }  
+    
+    
+    .backimage{
+    
+ background-image: url("faqs-page-title.jpg"); 
+
+ 
+  height: 270px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+    }
+
+
+    .backimagein{
+        
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+
+        h1{
+            color: #fff;
+             
+            
+            }
+        
+        }
+      
+
+      .backimagealt{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            
+            color: #fff;
+            
+            }
+
+
+                span{
+                    
+                    color:#fff;
+                    }
+        }
+
+
+    .accardion-left{
+        
+        border-right: 1px solid lightgrey;
+        
+        }
