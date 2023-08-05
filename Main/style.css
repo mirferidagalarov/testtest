@@ -1,0 +1,572 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.border-right {
+  border-right: 1px solid black;
+}
+
+.rowbot {
+  border-bottom: 1px solid black;
+}
+
+.aicon {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 100%;
+  font-size: 1.3rem;
+}
+
+.aicon i {
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.bicon {
+  border: 1px solid #fff;
+  border-radius: 100%;
+  font-size: 1.3rem;
+}
+
+.bicon i {
+  padding: 5px;
+  color: #fff;
+}
+
+.span1 {
+  background-color: #439665;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  transition: all 0.4s linear;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0.6);
+  transform: translatey(-100px);
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+}
+
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.2s ease-in-out;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2,
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  transition-delay: 0.2s;
+} 
+.header-container {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 2px;
+}
+
+.header-container ul {
+  font-size: small;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.header-container li a {
+  margin-right: 2px;
+  color: #333333;
+}
+
+.header-container li::after {
+  content: "|";
+  margin-left: 2px;
+  color: #333333;
+}
+
+.header-container p {
+  font-size: small;
+  color: #777777;
+  margin: 0;
+}
+
+.section-1 {
+  margin-top: 4rem;
+}
+
+.section-1 img {
+  width: 270px;
+}
+
+.section-1 ul {
+  margin: 5px;
+  font-size: small;
+  list-style: none;
+  display: flex;
+}
+
+.section-1 li {
+  margin-right: 1rem;
+  color: #333333;
+}
+
+.section-1 li:last-child {
+  margin-right: 0;
+}
+
+.section-1 li a {
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.section-1 .special-offer {
+  color: #439665;
+}
+
+.section-1 .social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.section-1 .social-icons li {
+  margin-right: 1rem;
+}
+
+.section-1 .social-icons li:last-child {
+  margin-right: 0;
+}
+
+.section-1 .social-icons li a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.section-3 h3 {
+  margin: 0;
+}
+
+.section-3 .progress {
+  height: 3px;
+}
+
+.section-3 .col-3 img {
+  height: 450px;
+}
+
+.section-3 .col-9 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.section-3 .product-item {
+  width: 180px;
+  border: 1px solid lightgrey;
+  margin: 10px;
+  padding: 5px;
+}
+
+.section-3 .product-item img {
+  width: 100%;
+  height: 178px;
+}
+
+.section-3 .product-item .d-flex {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-3 .product-item a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.section-3 .product-item a:hover {
+  color: #439665;
+}
+
+.section-3 .product-item .product-price {
+  color: #439665;
+}
+
+.section-3 .product-item .product-category {
+  color: #a5a5a5;
+}
+
+.section-4 {
+  background-color: #f7f7f7;
+}
+
+.section-4 h3 {
+  margin-top: 2rem;
+}
+
+.section-4 .progress {
+  height: 3px;
+}
+
+.section-4 .col-lg-3,
+.section-4 .col-md-4,
+.section-4 .col-sm-6,
+.section-4 .col-xs-12 {
+  width: 230px;
+}
+
+.section-4 .col-12:first-child .hovereffect {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 178px;
+}
+
+.section-4 .col-12:last-child .hovereffect {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+}
+
+.section-4 .hovereffect img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-4 .col-12:first-child .hovereffect h3,
+.section-4 .col-12:first-child .hovereffect p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  color: #333;
+}
+
+.section-4 .hovereffect:hover img {
+  transform: scale(1.1);
+}
+
+.section-4 .hovereffect:hover h3,
+.section-4 .hovereffect:hover p {
+  opacity: 1;
+}
+
+.section-4 h3 {
+  font-size: medium;
+  padding-left: 50px;
+}
+
+.section-4 p {
+  padding-left: 50px;
+}
+
+.section-5 .progress {
+  height: 3px;
+}
+
+.section-5 .col-3 img {
+  height: 450px;
+}
+
+.section-5 .col-9 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.section-5 .col-9 > div {
+  width: 180px;
+  border: 1px solid lightgrey;
+}
+
+.section-5 .col-9 img {
+  width: 100%;
+}
+
+.section-5 .d-flex {
+  display: flex;
+}
+
+.section-5 .d-flex .flex-column {
+  flex-direction: column;
+}
+
+.section-5 a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.section-5 .hovereffect {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-5 .hovereffect img {
+  transition: all 0.3s ease-in-out;
+}
+
+.section-5 .hovereffect h3,
+.section-5 .hovereffect p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  color: #333;
+}
+
+.section-5 .hovereffect:hover img {
+  transform: scale(1.1);
+}
+
+.section-5 .hovereffect:hover h3,
+.section-5 .hovereffect:hover p {
+  opacity: 1;
+}
+
+.section-6 {
+  background-color: #449666;
+  padding: 30px;
+}
+
+.section-6 .col-8 {
+  padding: 0;
+}
+
+.section-6 .fa-tag {
+  color: #fff;
+  font-size: 70px;
+}
+
+.section-6 h3,
+.section-6 p {
+  color: #fff;
+}
+
+.section-6 p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.section-6 .col-4 {
+  padding: 0;
+}
+
+.section-6 .follow-text {
+  margin-left: 280px;
+  color: #fff;
+}
+
+.section-6 .social-links {
+  margin: 5px;
+  font-size: small;
+  margin-left: 150px;
+}
+
+.section-6 .social-links li {
+  margin-right: 8px;
+}
+
+.section-6 .social-links a {
+  color: #fff;
+}
+
+.section-7 .common {
+  border: 3px solid green;
+  width: 400px;
+  height: 600px;
+}
+
+.section-7 .timer {
+  border: 1px solid lightgray;
+  padding: 5px;
+}
+
+.section-7 .timer span:last-child {
+  font-size: small;
+}
+
+.section-7 .progress {
+  height: 5px;
+}
+
+.section-7 .progress-img {
+  height: 170px;
+}
+
+.hovereffectdivparent {
+  height: 280px;
+  width: 500px;
+}
+
+.section-8 .col-lg-3 {
+  height: 280px;
+  width: 400px;
+}
+
+.section-8 .col-8 .d-flex div:first-child {
+  font-size: small;
+  padding: 5px;
+}
+
+.section-7-box {
+  width: 180px;
+  height: 250px;
+  border: 1px solid lightgrey;
+}
+
+.section-9-box {
+  border-bottom: 1px solid lightgray;
+}
+
+.section-9 .progress {
+  height: 3px;
+}
+
+.hot-deals {
+  border: 3px solid green;
+  width: 350px;
+  height: 450px;
+}
+
+.hot-deals img {
+  width: 250px;
+  padding-left: 90px;
+}
+
+.colora1 {
+  color: #333333;
+}
+
+.colora2 {
+  color: #a5a5a5;
+}
+
+.colora3 {
+  color: #439665;
+}
+
+.section-10 .section-10-box {
+  width: 420px;
+  height: 200px;
+}
+
+.section-11 {
+  background-color: #449666;
+}
+
+.section-11 h6 {
+  color: #ffffff;
+}
+
+.section-11 h6 ~ p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.section-11 .col-3.d-flex.justify-content-center.align-items-center {
+  padding: 30px;
+}
+
+.section-11 .small.mt-3 {
+  padding: 20px;
+}
+
+.section-11 .section-11-icons {
+  color: #fff;
+  font-size: 50px;
+}
+
+.section-12 ul li a {
+  color: #848484;
+}
+
+.section-12 ul li h6 {
+  color: #333333;
+}
+
+.section-13 ul {
+  margin: 5px;
+  font-size: small;
+}
+
+.between-border {
+  border-bottom: 1px solid lightgray;
+}
+
+.section-14 a {
+  color: black;
+  font-size: small;
+}
+
+.section-14 small {
+  font-size: small;
+}/*# sourceMappingURL=style.css.map */

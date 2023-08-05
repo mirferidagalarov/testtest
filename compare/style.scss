@@ -1,0 +1,84 @@
+ul{
+    
+    list-style-type: none;
+    }      
+
+
+     a{
+        text-decoration: none;
+        
+        }  
+    
+    
+    .backimage{
+    
+ background-image: url("./assets/blog-title-bg6-opt.jpg"); 
+ 
+  height: 270px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+    }
+
+
+    .backimagein{
+        
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+
+        h1{
+            color: #fff;
+             
+            
+            }
+        
+        }
+      
+
+      .backimagealt{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a{
+            
+            color: #fff;
+            
+            }
+
+
+                span{
+                    
+                    color:#fff;
+                    }
+        }
+
+
+
+            .shuffle{
+                
+                i{
+                    font-size:20rem;
+                    
+                    }
+
+                        h1{
+                            font-size: 4rem;
+                            }
+
+                                p{
+                                    width: 700px;
+                                    text-align: center;
+                                    }
+                
+                }

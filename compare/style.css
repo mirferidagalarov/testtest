@@ -1,0 +1,52 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.backimage {
+  background-image: url("./assets/blog-title-bg6-opt.jpg");
+  height: 270px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.backimagein {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backimagein h1 {
+  color: #fff;
+}
+
+.backimagealt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backimagealt a {
+  color: #fff;
+}
+.backimagealt span {
+  color: #fff;
+}
+
+.shuffle i {
+  font-size: 20rem;
+}
+.shuffle h1 {
+  font-size: 4rem;
+}
+.shuffle p {
+  width: 700px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
